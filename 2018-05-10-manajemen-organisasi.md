@@ -1,15 +1,25 @@
+---
+date: 2018-05-10
+title: Manajemen organisasi
+description: Manajemen Organisasi Perangkat Daerah dalam SSO
+categories:
+  - sso
+resources:
+  - name: Source code
+    link: https://github.com/bantenprov/dokumen-pengembangan-bantenprov-sso
+  - name: CloudCannon
+    link: https://sso.bantenprov.go.id
+type: Video
+set: getting-started
+set_order: 1
+---
 
----
-title: Manajemen Organisasi
-type: panduan
-order: 105
----
 
 ## Menu dan Cara Penggunaan Manajemen Organisasi
 
 ### Tampilan Halaman Organization Structure
 
- [![Halaman Organization Structure](images/manajemen-organisasi/sso_halaman-struktur-organisasi.png)](images/manajemen-organisasi/sso_halaman-struktur-organisasi.png)
+ [![Halaman Organization Structure](/images/sso/manajemen-organisasi/sso_halaman-struktur-organisasi.png)](/images/sso/manajemen-organisasi/sso_halaman-struktur-organisasi.png)
 
 Halaman ini berfungsi untuk menampilkan struktur organisasi pemerintahan yang ada di Provinsi Banten. Pada halaman ini administrator dapat menambahkan, melihat, merubah, dan menghapus data struktur organisasi yang terdapat di Pemerintahan. 
 
