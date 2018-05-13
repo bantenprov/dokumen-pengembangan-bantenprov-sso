@@ -23,7 +23,7 @@ set_order: 1
 
 Halaman ini berfungsi untuk menampilkan struktur organisasi pemerintahan yang ada di Provinsi Banten. Pada halaman ini administrator dapat menambahkan, melihat, merubah, dan menghapus data struktur organisasi yang terdapat di Pemerintahan. 
 
- [![Struktur Hirarki](images/manajemen-organisasi/sso_struktur-hirarki-organisasi.png)](images/manajemen-organisasi/sso_struktur-hirarki-organisasi.png)
+ [![Struktur Hirarki](/images/sso/manajemen-organisasi/sso_struktur-hirarki-organisasi.png)](/images/sso/manajemen-organisasi/sso_struktur-hirarki-organisasi.png)
 
 Gambar di atas merupakan struktur hirarki organisasi pemerintahan yang ada di Provinsi Banten sesuai dengan level-nya. Setiap unit kerja memiliki level yang berbeda sesuai kewenangannya, dan juga setiap unit kerja membawahi unit kerja yang levelnya berada di bawahnya. Setiap unit kerja memiliki kode dan identifier (UUID) yang berbeda-beda.
 
