@@ -15,9 +15,7 @@ set_order: 1
 ---
 
 
-## Menu dan Cara Penggunaan Manajemen Organisasi
-
-### Tampilan Halaman Organization Structure
+## Halaman Organization Structure
 
  [![Halaman Organization Structure](/images/sso/manajemen-organisasi/sso_halaman-struktur-organisasi.png)](/images/sso/manajemen-organisasi/sso_halaman-struktur-organisasi.png)
 
@@ -32,6 +30,8 @@ Gambar di atas merupakan struktur hirarki organisasi pemerintahan yang ada di Pr
 Gambar di atas merupakan tampilan dari data struktur hirarki, di menu ini terdapat data dari hirarki yang dipilih baik itu nama unit kerja, identifier, identitas kepala unit kerja dan juga bawahannya. Untuk melihat data struktur hirarki kita harus mengklik folder hirarki dari unit kerja yang ingin dilihat. Berikut ini merupakan gambar detail unit kerja yang dipilih:
 
  [![Data Struktur Hirarki](/images/sso/manajemen-organisasi/sso_struktur-hirarki-organisasi-full.png)](/images/sso/manajemen-organisasi/sso_struktur-hirarki-organisasi-full.png)
+
+## Menambah Unit Kerja baru
 
 Untuk menambahkan unit kerja baru pada struktur hirarki maka kita harus memilih terlebih dahulu struktur hirarki yang ingin ditambahkan unit kerjanya, data unit kerja bisa dilihat di halaman [ini](https://opd-01.dev.bantenprov.go.id/laravel-opd). Misalnya kita ingin menambah unit kerja baru yang memiliki level 1 yaitu **Sekretariat DPRD**, maka kita harus mengklik folder **Pemprov Banten** pada struktur hirarki karena unit kerja level 1 harus berada di dalam folder **Pemrov Banten**, lalu kita klik icon setting di menu data hirarki seperti pada gambar dan pilih **Add org. unit** . 
 
@@ -61,6 +61,8 @@ Setelah menekan tombol save maka unit kerja baru akan muncul di struktur hirarki
 
 Jika kita klik folder **Sekretariat DPRD** maka akan muncul tampilan data dari unit kerja **Sekretariat DPRD** di sebelah kanan, seperti unit kerja yang dibawahinya dan juga orang yang bertanggung jawab terhadap unit kerja tersebut. Saat ini di dalam data tersebut masih kosong dan kita akan menambahkan unit kerja yang ada di bawah **Sekretariat DPRD** yaitu yang memiliki level 2 sampai level 5.
 
+## Menambah Unit Kerja baru Level 2
+
 [![Folder Unit Kerja Baru 2](/images/sso/manajemen-organisasi/sso_unit-kerja-baru2.png)](/images/sso/manajemen-organisasi/sso_unit-kerja-baru2.png)
 
 Selanjutnya kita akan menambahkan unit kerja baru yang memiliki level 2 pada unit kerja **Sekertariat DPRD** yaitu unit kerja **Bagian Hukum dan Persidangan**. Unit kerja ini (**Bagian Hukum dan Persidangan**) akan di tambahkan pada folder **Sekertariat DPRD** karena memiliki level 2 dan terletak di bawah **Sekertariat DPRD** jika dilihat pada halaman  [ini](https://opd-01.dev.bantenprov.go.id/laravel-opd). 
@@ -83,6 +85,8 @@ Pada halaman ini kita hanya akan mengisi 4 field seperti sebelumnya yaitu:
  
 Jika sudah terisi maka tekan tombol save pada halaman bagian bawah, berikut merupakan contoh field yang sudah terisi:
  
+## Menambah Unit Kerja baru level 3
+
 [![Form Terisi 2](/images/sso/manajemen-organisasi/sso_form-tambah-unit-kerja-terisi2.png)](/images/sso/manajemen-organisasi/sso_form-tambah-unit-kerja-terisi2.png)
 
 Jika sudah menekan tombol save maka unit kerja baru akan muncul pada struktur hirarki, pada contoh ini unit kerja baru tersebut adalah **Bagian Hukum dan Persidangan** dan akan terletak di bawah folder **Sekertariat DPRD** seperti gambar di bawah ini:
@@ -124,6 +128,8 @@ Pada gambar di atas maka kita akan melihat tabel unit kerja besera levelnya. Unt
 5. Buat unit kerja **Sub Bagian Kerjasama Daerah**, **Sub Bagian Kerjasama Luar Negeri**, dan **Sub Bagian Tata Usaha**. Semua unit ini di buat di dalam folder **Bagian kerjasama** karena semua unit ini memiliki level 5 dan terletak di bawah unit kerja **Bagian Kerjasama**.
 
 6. Buat unit kerja **Bagian Administrasi Kewilayahan**, unit ini di buat di dalam folder **Biro Pemerintahan** karena unit ini memiliki level 4 dan terletak di bawah unit kerja **Biro Pemerintahan**. Untuk mengisi unit kerja selanjutnya tinggal ikuti langkah yang telah ada.
+
+## Struktur Hirarki Unit Kerja
 
 Berikut ini adalah contoh struktur hirarki unit kerja yang dibuat jika mengacu pada halaman [opd](https://opd-01.dev.bantenprov.go.id/laravel-opd).
 
