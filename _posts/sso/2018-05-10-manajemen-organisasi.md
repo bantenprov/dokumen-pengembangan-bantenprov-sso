@@ -4,14 +4,7 @@ title: Manajemen organisasi
 description: Manajemen Organisasi Perangkat Daerah dalam SSO
 categories:
   - sso
-resources:
-  - name: Source code
-    link: https://github.com/bantenprov/dokumen-pengembangan-bantenprov-sso
-  - name: CloudCannon
-    link: https://sso.bantenprov.go.id
-type: Video
-set: getting-started
-set_order: 1
+type: Document
 ---
 
 
