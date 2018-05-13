@@ -1,35 +1,45 @@
-
 ---
-title: Manajemen Organisasi
-type: panduan
-order: 105
+date: 2018-05-10
+title: Manajemen organisasi
+description: Manajemen Organisasi Perangkat Daerah dalam SSO
+categories:
+  - sso
+resources:
+  - name: Source code
+    link: https://github.com/bantenprov/dokumen-pengembangan-bantenprov-sso
+  - name: CloudCannon
+    link: https://sso.bantenprov.go.id
+type: Video
+set: getting-started
+set_order: 1
 ---
 
-## Menu dan Cara Penggunaan Manajemen Organisasi
 
-### Tampilan Halaman Organization Structure
+## Halaman Organization Structure
 
- [![Halaman Organization Structure](images/manajemen-organisasi/sso_halaman-struktur-organisasi.png)](images/manajemen-organisasi/sso_halaman-struktur-organisasi.png)
+ [![Halaman Organization Structure](/images/sso/manajemen-organisasi/sso_halaman-struktur-organisasi.png)](/images/sso/manajemen-organisasi/sso_halaman-struktur-organisasi.png)
 
 Halaman ini berfungsi untuk menampilkan struktur organisasi pemerintahan yang ada di Provinsi Banten. Pada halaman ini administrator dapat menambahkan, melihat, merubah, dan menghapus data struktur organisasi yang terdapat di Pemerintahan. 
 
- [![Struktur Hirarki](images/manajemen-organisasi/sso_struktur-hirarki-organisasi.png)](images/manajemen-organisasi/sso_struktur-hirarki-organisasi.png)
+ [![Struktur Hirarki](/images/sso/manajemen-organisasi/sso_struktur-hirarki-organisasi.png)](/images/sso/manajemen-organisasi/sso_struktur-hirarki-organisasi.png)
 
 Gambar di atas merupakan struktur hirarki organisasi pemerintahan yang ada di Provinsi Banten sesuai dengan level-nya. Setiap unit kerja memiliki level yang berbeda sesuai kewenangannya, dan juga setiap unit kerja membawahi unit kerja yang levelnya berada di bawahnya. Setiap unit kerja memiliki kode dan identifier (UUID) yang berbeda-beda.
 
- [![Data Struktur Hirarki](images/manajemen-organisasi/sso_data-struktur-hirarki-organisasi.png)](images/manajemen-organisasi/sso_data-struktur-hirarki-organisasi.png)
+ [![Data Struktur Hirarki](/images/sso/manajemen-organisasi/sso_data-struktur-hirarki-organisasi.png)](/images/sso/manajemen-organisasi/sso_data-struktur-hirarki-organisasi.png)
 
 Gambar di atas merupakan tampilan dari data struktur hirarki, di menu ini terdapat data dari hirarki yang dipilih baik itu nama unit kerja, identifier, identitas kepala unit kerja dan juga bawahannya. Untuk melihat data struktur hirarki kita harus mengklik folder hirarki dari unit kerja yang ingin dilihat. Berikut ini merupakan gambar detail unit kerja yang dipilih:
 
- [![Data Struktur Hirarki](images/manajemen-organisasi/sso_struktur-hirarki-organisasi-full.png)](images/manajemen-organisasi/sso_struktur-hirarki-organisasi-full.png)
+ [![Data Struktur Hirarki](/images/sso/manajemen-organisasi/sso_struktur-hirarki-organisasi-full.png)](/images/sso/manajemen-organisasi/sso_struktur-hirarki-organisasi-full.png)
+
+## Menambah Unit Kerja baru
 
 Untuk menambahkan unit kerja baru pada struktur hirarki maka kita harus memilih terlebih dahulu struktur hirarki yang ingin ditambahkan unit kerjanya, data unit kerja bisa dilihat di halaman [ini](https://opd-01.dev.bantenprov.go.id/laravel-opd). Misalnya kita ingin menambah unit kerja baru yang memiliki level 1 yaitu **Sekretariat DPRD**, maka kita harus mengklik folder **Pemprov Banten** pada struktur hirarki karena unit kerja level 1 harus berada di dalam folder **Pemrov Banten**, lalu kita klik icon setting di menu data hirarki seperti pada gambar dan pilih **Add org. unit** . 
 
- [![Tambah Unit Kerja ](images/manajemen-organisasi/sso_tambah-data-unit-kerja.png)](images/manajemen-organisasi/sso_tambah-data-unit-kerja.png)
+ [![Tambah Unit Kerja ](/images/sso/manajemen-organisasi/sso_tambah-data-unit-kerja.png)](/images/sso/manajemen-organisasi/sso_tambah-data-unit-kerja.png)
  
 Maka akan muncul halaman untuk menambah unit kerja baru seperti gambar di bawah ini:
 
- [![Tambah Unit Kerja Baru ](images/manajemen-organisasi/sso_tambah-unit-kerja-baru.png)](images/manajemen-organisasi/sso_tambah-unit-kerja-baru.png)
+ [![Tambah Unit Kerja Baru ](/images/sso/manajemen-organisasi/sso_tambah-unit-kerja-baru.png)](/images/sso/manajemen-organisasi/sso_tambah-unit-kerja-baru.png)
  
 Pada halaman ini kita hanya akan mengisi 4 field saja yaitu: 
  1. Name: Field ini diisi dengan nama unit kerja dan semuanya huruf kecil, misalkan **sekretariatdprd**.
@@ -39,31 +49,33 @@ Pada halaman ini kita hanya akan mengisi 4 field saja yaitu:
 
 Berikut ini merupakan gambar form yang sudah terisi:
 
- [![Form Terisi ](images/manajemen-organisasi/sso_form-tambah-unit-kerja-terisi.png)](images/manajemen-organisasi/sso_form-tambah-unit-kerja-terisi.png)
+ [![Form Terisi ](/images/sso/manajemen-organisasi/sso_form-tambah-unit-kerja-terisi.png)](/images/sso/manajemen-organisasi/sso_form-tambah-unit-kerja-terisi.png)
 
 Jika Sudah tersisi maka langkah selanjutnya menekan tombol save yang terdapat di bagian bawah halaman seperti gambar di bawah ini:
 
-[![Tombol Save ](images/manajemen-organisasi/sso_tombol-save.png)](images/manajemen-organisasi/sso_tombol-save.png)
+[![Tombol Save ](/images/sso/manajemen-organisasi/sso_tombol-save.png)](/images/sso/manajemen-organisasi/sso_tombol-save.png)
 
 Setelah menekan tombol save maka unit kerja baru akan muncul di struktur hirarki, pada contoh ini yaitu unit kerja **Sekretariat DPRD**. Jika dilihat pada folder hirarki, unit kerja **Sekretariat DPRD** terletak di bawah unit kerja **Pemrov Banten** yang mana menunjukan bahwa unit kerja level 1 berhasil di tambahkan. 
 
-[![Folder Unit Kerja Baru](images/manajemen-organisasi/sso_unit-kerja-baru.png)](images/manajemen-organisasi/sso_unit-kerja-baru.png)
+[![Folder Unit Kerja Baru](/images/sso/manajemen-organisasi/sso_unit-kerja-baru.png)](/images/sso/manajemen-organisasi/sso_unit-kerja-baru.png)
 
 Jika kita klik folder **Sekretariat DPRD** maka akan muncul tampilan data dari unit kerja **Sekretariat DPRD** di sebelah kanan, seperti unit kerja yang dibawahinya dan juga orang yang bertanggung jawab terhadap unit kerja tersebut. Saat ini di dalam data tersebut masih kosong dan kita akan menambahkan unit kerja yang ada di bawah **Sekretariat DPRD** yaitu yang memiliki level 2 sampai level 5.
 
-[![Folder Unit Kerja Baru 2](images/manajemen-organisasi/sso_unit-kerja-baru2.png)](images/manajemen-organisasi/sso_unit-kerja-baru2.png)
+## Menambah Unit Kerja baru Level 2
+
+[![Folder Unit Kerja Baru 2](/images/sso/manajemen-organisasi/sso_unit-kerja-baru2.png)](/images/sso/manajemen-organisasi/sso_unit-kerja-baru2.png)
 
 Selanjutnya kita akan menambahkan unit kerja baru yang memiliki level 2 pada unit kerja **Sekertariat DPRD** yaitu unit kerja **Bagian Hukum dan Persidangan**. Unit kerja ini (**Bagian Hukum dan Persidangan**) akan di tambahkan pada folder **Sekertariat DPRD** karena memiliki level 2 dan terletak di bawah **Sekertariat DPRD** jika dilihat pada halaman  [ini](https://opd-01.dev.bantenprov.go.id/laravel-opd). 
 
-[![Halaman OPD](images/manajemen-organisasi/sso_halaman-opd.png)](images/manajemen-organisasi/sso_halaman-opd.png)
+[![Halaman OPD](/images/sso/manajemen-organisasi/sso_halaman-opd.png)](/images/sso/manajemen-organisasi/sso_halaman-opd.png)
 
 Peratama klik folder **Sekertariat DPRD**, lalu tambah unit kerja baru (**tutorial menambah unit kerja baru ada di atas**) seperti pada gambar di bawah ini:
 
-[![Tambah Unit Kerja 2](images/manajemen-organisasi/sso_tambah-unit-kerja2.png)](images/manajemen-organisasi/sso_tambah-unit-kerja2.png)
+[![Tambah Unit Kerja 2](/images/sso/manajemen-organisasi/sso_tambah-unit-kerja2.png)](/images/sso/manajemen-organisasi/sso_tambah-unit-kerja2.png)
 
 Maka akan muncul halaman untuk menambah unit kerja baru seperti gambar di bawah ini:
 
- [![Tambah Unit Kerja Baru 2](images/manajemen-organisasi/sso_tambah-unit-kerja-baru2.png)](images/manajemen-organisasi/sso_tambah-unit-kerja-baru2.png)
+ [![Tambah Unit Kerja Baru 2](/images/sso/manajemen-organisasi/sso_tambah-unit-kerja-baru2.png)](/images/sso/manajemen-organisasi/sso_tambah-unit-kerja-baru2.png)
  
 Pada halaman ini kita hanya akan mengisi 4 field seperti sebelumnya yaitu: 
  1. Name: Field ini diisi dengan nama unit kerja dan semuanya huruf kecil, misalkan **bagian_hukum_dan_persidangan**.
@@ -73,33 +85,35 @@ Pada halaman ini kita hanya akan mengisi 4 field seperti sebelumnya yaitu:
  
 Jika sudah terisi maka tekan tombol save pada halaman bagian bawah, berikut merupakan contoh field yang sudah terisi:
  
-[![Form Terisi 2](images/manajemen-organisasi/sso_form-tambah-unit-kerja-terisi2.png)](images/manajemen-organisasi/sso_form-tambah-unit-kerja-terisi2.png)
+## Menambah Unit Kerja baru level 3
+
+[![Form Terisi 2](/images/sso/manajemen-organisasi/sso_form-tambah-unit-kerja-terisi2.png)](/images/sso/manajemen-organisasi/sso_form-tambah-unit-kerja-terisi2.png)
 
 Jika sudah menekan tombol save maka unit kerja baru akan muncul pada struktur hirarki, pada contoh ini unit kerja baru tersebut adalah **Bagian Hukum dan Persidangan** dan akan terletak di bawah folder **Sekertariat DPRD** seperti gambar di bawah ini:
 
-[![Folder Unit Kerja Baru 3](images/manajemen-organisasi/sso_unit-kerja-baru3.png)](images/manajemen-organisasi/sso_unit-kerja-baru3.png)
+[![Folder Unit Kerja Baru 3](/images/sso/manajemen-organisasi/sso_unit-kerja-baru3.png)](/images/sso/manajemen-organisasi/sso_unit-kerja-baru3.png)
 
 Selanjutnya kita akan menambahkan unit kerja baru yaitu **Sub Bagian Alat Kelengkapan DPRD**. Jika di lihat di halaman  [ini](https://opd-01.dev.bantenprov.go.id/laravel-opd), unit kerja **Sub Bagian Alat Kelengkapan DPRD** terletak di bawah unit kerja **Bagian Hukum dan Persidangan** dan memiliki level 3. 
 
-[![Halaman OPD 2](images/manajemen-organisasi/sso_halaman-opd2.png)](images/manajemen-organisasi/sso_halaman-opd2.png)
+[![Halaman OPD 2](/images/sso/manajemen-organisasi/sso_halaman-opd2.png)](/images/sso/manajemen-organisasi/sso_halaman-opd2.png)
 
 Berarti kita akan membuat unit kerja ini di dalam folder **Bagian Hukum dan Persidangan** karena unit kerja ini memiliki level 2. Langkah untuk menambah unit kerja sama seperti contoh yang ada di atas, pertama klik folder **Bagian Hukum dan Persidangan** lalu tambah unit kerja baru maka akan muncul gambar seperti di bawah ini:
 
- [![Tambah Unit Kerja Baru 3](images/manajemen-organisasi/sso_tambah-unit-kerja-baru3.png)](images/manajemen-organisasi/sso_tambah-unit-kerja-baru3.png)
+ [![Tambah Unit Kerja Baru 3](/images/sso/manajemen-organisasi/sso_tambah-unit-kerja-baru3.png)](/images/sso/manajemen-organisasi/sso_tambah-unit-kerja-baru3.png)
 
 Jika kita lihat pada bagian sebelah kanan halaman maka kita bisa melihat Organization yang tertulis, pada contoh ini yaitu **Bagian Hukum dan Persidangan** yang berarti kita akan menambahkan unit kerja baru di folder **Bagian Hukum dan Persidangan**.
 
 Untuk mengisi form sama seperti contoh pengisian yang sebelumnya, berikut merupakan gambar form yang sudah terisi:
 
-[![Form Terisi 3](images/manajemen-organisasi/sso_form-tambah-unit-kerja-terisi3.png)](images/manajemen-organisasi/sso_form-tambah-unit-kerja-terisi3.png)
+[![Form Terisi 3](/images/sso/manajemen-organisasi/sso_form-tambah-unit-kerja-terisi3.png)](/images/sso/manajemen-organisasi/sso_form-tambah-unit-kerja-terisi3.png)
 
 Jika sudah menekan tombol save, maka akan muncul unit kerja baru pada struktur hirarki yaitu folder **Sub Bagian Alat Kelengkapan DPRD** seperti pada gambar di bawah ini:
 
-[![Folder Unit Kerja Baru 4](images/manajemen-organisasi/sso_unit-kerja-baru4.png)](images/manajemen-organisasi/sso_unit-kerja-baru4.png)
+[![Folder Unit Kerja Baru 4](/images/sso/manajemen-organisasi/sso_unit-kerja-baru4.png)](/images/sso/manajemen-organisasi/sso_unit-kerja-baru4.png)
 
 Untuk pengisian unit kerja selanjutnya langkah yang di tempuh sama seperti di atas, yang perlu di perhatikan adalah penempatan unit kerjanya harus sesuai dengan level yang tertera pada unit kerja tersebut. Berikut merupakan gambar tabel unit kerja yang terdapat di halaman [opd](https://opd-01.dev.bantenprov.go.id/laravel-opd):
 
-[![Halaman OPD 3](images/manajemen-organisasi/sso_halaman-opd3.png)](images/manajemen-organisasi/sso_halaman-opd3.png)
+[![Halaman OPD 3](/images/sso/manajemen-organisasi/sso_halaman-opd3.png)](/images/sso/manajemen-organisasi/sso_halaman-opd3.png)
 
 Pada gambar di atas maka kita akan melihat tabel unit kerja besera levelnya. Untuk membuat unit kerja baru jika mengacu pada tabel di atas maka langkah-langkahnya adalah sebagai berikut:
 
@@ -114,6 +128,8 @@ Pada gambar di atas maka kita akan melihat tabel unit kerja besera levelnya. Unt
 5. Buat unit kerja **Sub Bagian Kerjasama Daerah**, **Sub Bagian Kerjasama Luar Negeri**, dan **Sub Bagian Tata Usaha**. Semua unit ini di buat di dalam folder **Bagian kerjasama** karena semua unit ini memiliki level 5 dan terletak di bawah unit kerja **Bagian Kerjasama**.
 
 6. Buat unit kerja **Bagian Administrasi Kewilayahan**, unit ini di buat di dalam folder **Biro Pemerintahan** karena unit ini memiliki level 4 dan terletak di bawah unit kerja **Biro Pemerintahan**. Untuk mengisi unit kerja selanjutnya tinggal ikuti langkah yang telah ada.
+
+## Struktur Hirarki Unit Kerja
 
 Berikut ini adalah contoh struktur hirarki unit kerja yang dibuat jika mengacu pada halaman [opd](https://opd-01.dev.bantenprov.go.id/laravel-opd).
 
